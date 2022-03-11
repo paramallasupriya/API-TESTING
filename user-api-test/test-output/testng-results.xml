@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="11" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-02T12:17:43 PST" name="Default suite" finished-at="2022-03-02T12:17:56 PST" duration-ms="12554">
+    <groups>
+    </groups>
+    <test started-at="2022-03-02T12:17:43 PST" name="Default test" finished-at="2022-03-02T12:17:56 PST" duration-ms="12554">
+      <class name="com.apex.samples.UserAPITestNGGetXLS">
+        <test-method signature="testGetwithAlphaNumerics()[pri:0, instance:com.apex.samples.UserAPITestNGGetXLS@3ba9ad43]" started-at="2022-03-02T12:17:43 PST" name="testGetwithAlphaNumerics" finished-at="2022-03-02T12:17:46 PST" duration-ms="2473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetwithAlphaNumerics -->
+        <test-method signature="testGetwithBlank()[pri:0, instance:com.apex.samples.UserAPITestNGGetXLS@3ba9ad43]" started-at="2022-03-02T12:17:46 PST" name="testGetwithBlank" finished-at="2022-03-02T12:17:46 PST" duration-ms="3" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Illegal character in path at index 38: https://gorest.co.in/public-api/users/ ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Illegal character in path at index 38: https://gorest.co.in/public-api/users/ 
+at java.base/java.net.URI.create(URI.java:906)
+at org.apache.http.client.methods.HttpGet.<init>(HttpGet.java:66)
+at com.apex.samples.UserAPITestNGGetXLS.sendGetRequest(UserAPITestNGGetXLS.java:30)
+at com.apex.samples.UserAPITestNGGetXLS.testGetwithBlank(UserAPITestNGGetXLS.java:102)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 38: https://gorest.co.in/public-api/users/ 
+at java.base/java.net.URI$Parser.fail(URI.java:2974)
+at java.base/java.net.URI$Parser.checkChars(URI.java:3145)
+at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3227)
+at java.base/java.net.URI$Parser.parse(URI.java:3175)
+at java.base/java.net.URI.<init>(URI.java:623)
+at java.base/java.net.URI.create(URI.java:904)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetwithBlank -->
+        <test-method signature="testGetwithBlankInFirstPosition()[pri:0, instance:com.apex.samples.UserAPITestNGGetXLS@3ba9ad43]" started-at="2022-03-02T12:17:46 PST" name="testGetwithBlankInFirstPosition" finished-at="2022-03-02T12:17:46 PST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Illegal character in path at index 38: https://gorest.co.in/public-api/users/ 1383]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Illegal character in path at index 38: https://gorest.co.in/public-api/users/ 1383
+at java.base/java.net.URI.create(URI.java:906)
+at org.apache.http.client.methods.HttpGet.<init>(HttpGet.java:66)
+at com.apex.samples.UserAPITestNGGetXLS.sendGetRequest(UserAPITestNGGetXLS.java:30)
+at com.apex.samples.UserAPITestNGGetXLS.testGetwithBlankInFirstPosition(UserAPITestNGGetXLS.java:189)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 38: https://gorest.co.in/public-api/users/ 1383
+at java.base/java.net.URI$Parser.fail(URI.java:2974)
+at java.base/java.net.URI$Parser.checkChars(URI.java:3145)
+at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3227)
+at java.base/java.net.URI$Parser.parse(URI.java:3175)
+at java.base/java.net.URI.<init>(URI.java:623)
+at java.base/java.net.URI.create(URI.java:904)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetwithBlankInFirstPosition -->
+        <test-method signature="testGetwithBlankInLastPosition()[pri:0, instance:com.apex.samples.UserAPITestNGGetXLS@3ba9ad43]" started-at="2022-03-02T12:17:46 PST" name="testGetwithBlankInLastPosition" finished-at="2022-03-02T12:17:46 PST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Illegal character in path at index 42: https://gorest.co.in/public-api/users/1383 ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Illegal character in path at index 42: https://gorest.co.in/public-api/users/1383 
+at java.base/java.net.URI.create(URI.java:906)
+at org.apache.http.client.methods.HttpGet.<init>(HttpGet.java:66)
+at com.apex.samples.UserAPITestNGGetXLS.sendGetRequest(UserAPITestNGGetXLS.java:30)
+at com.apex.samples.UserAPITestNGGetXLS.testGetwithBlankInLastPosition(UserAPITestNGGetXLS.java:201)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 42: https://gorest.co.in/public-api/users/1383 
+at java.base/java.net.URI$Parser.fail(URI.java:2974)
+at java.base/java.net.URI$Parser.checkChars(URI.java:3145)
+at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3227)
+at java.base/java.net.URI$Parser.parse(URI.java:3175)
+at java.base/java.net.URI.<init>(URI.java:623)
+at java.base/java.net.URI.create(URI.java:904)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetwithBlankInLastPosition -->
+        <test-method signature="testGetwithCharacters()[pri:0, instance:com.apex.samples.UserAPITestNGGetXLS@3ba9ad43]" started-at="2022-03-02T12:17:46 PST" name="testGetwithCharacters" finished-at="2022-03-02T12:17:47 PST" duration-ms="996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetwithCharacters -->
+        <test-method signature="testGetwithHTMLCharacters()[pri:0, instance:com.apex.samples.UserAPITestNGGetXLS@3ba9ad43]" started-at="2022-03-02T12:17:47 PST" name="testGetwithHTMLCharacters" finished-at="2022-03-02T12:17:47 PST" duration-ms="3" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Illegal character in path at index 38: https://gorest.co.in/public-api/users/<!$#>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Illegal character in path at index 38: https://gorest.co.in/public-api/users/<!$#>
+at java.base/java.net.URI.create(URI.java:906)
+at org.apache.http.client.methods.HttpGet.<init>(HttpGet.java:66)
+at com.apex.samples.UserAPITestNGGetXLS.sendGetRequest(UserAPITestNGGetXLS.java:30)
+at com.apex.samples.UserAPITestNGGetXLS.testGetwithHTMLCharacters(UserAPITestNGGetXLS.java:261)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 38: https://gorest.co.in/public-api/users/<!$#>
+at java.base/java.net.URI$Parser.fail(URI.java:2974)
+at java.base/java.net.URI$Parser.checkChars(URI.java:3145)
+at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3227)
+at java.base/java.net.URI$Parser.parse(URI.java:3175)
+at java.base/java.net.URI.<init>(URI.java:623)
+at java.base/java.net.URI.create(URI.java:904)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetwithHTMLCharacters -->
+        <test-method signature="testGetwithLowerCaseLetters()[pri:0, instance:com.apex.samples.UserAPITestNGGetXLS@3ba9ad43]" started-at="2022-03-02T12:17:47 PST" name="testGetwithLowerCaseLetters" finished-at="2022-03-02T12:17:48 PST" duration-ms="992" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetwithLowerCaseLetters -->
+        <test-method signature="testGetwithMixOfUpperNLowerCaseLetters()[pri:0, instance:com.apex.samples.UserAPITestNGGetXLS@3ba9ad43]" started-at="2022-03-02T12:17:48 PST" name="testGetwithMixOfUpperNLowerCaseLetters" finished-at="2022-03-02T12:17:49 PST" duration-ms="988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetwithMixOfUpperNLowerCaseLetters -->
+        <test-method signature="testGetwithNegativeNumber()[pri:0, instance:com.apex.samples.UserAPITestNGGetXLS@3ba9ad43]" started-at="2022-03-02T12:17:49 PST" name="testGetwithNegativeNumber" finished-at="2022-03-02T12:17:50 PST" duration-ms="996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetwithNegativeNumber -->
+        <test-method signature="testGetwithNumber()[pri:0, instance:com.apex.samples.UserAPITestNGGetXLS@3ba9ad43]" started-at="2022-03-02T12:17:50 PST" name="testGetwithNumber" finished-at="2022-03-02T12:17:51 PST" duration-ms="990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetwithNumber -->
+        <test-method signature="testGetwithSpecialCharacters()[pri:0, instance:com.apex.samples.UserAPITestNGGetXLS@3ba9ad43]" started-at="2022-03-02T12:17:51 PST" name="testGetwithSpecialCharacters" finished-at="2022-03-02T12:17:51 PST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Malformed escape pair at index 41: https://gorest.co.in/public-api/users/@#$%^^&]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Malformed escape pair at index 41: https://gorest.co.in/public-api/users/@#$%^^&
+at java.base/java.net.URI.create(URI.java:906)
+at org.apache.http.client.methods.HttpGet.<init>(HttpGet.java:66)
+at com.apex.samples.UserAPITestNGGetXLS.sendGetRequest(UserAPITestNGGetXLS.java:30)
+at com.apex.samples.UserAPITestNGGetXLS.testGetwithSpecialCharacters(UserAPITestNGGetXLS.java:177)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.URISyntaxException: Malformed escape pair at index 41: https://gorest.co.in/public-api/users/@#$%^^&
+at java.base/java.net.URI$Parser.fail(URI.java:2974)
+at java.base/java.net.URI$Parser.scanEscape(URI.java:3102)
+at java.base/java.net.URI$Parser.scan(URI.java:3125)
+at java.base/java.net.URI$Parser.checkChars(URI.java:3143)
+at java.base/java.net.URI$Parser.parse(URI.java:3189)
+at java.base/java.net.URI.<init>(URI.java:623)
+at java.base/java.net.URI.create(URI.java:904)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetwithSpecialCharacters -->
+        <test-method signature="testGetwithSuccessData(java.lang.String,java.lang.String)[pri:0, instance:com.apex.samples.UserAPITestNGGetXLS@3ba9ad43]" started-at="2022-03-02T12:17:51 PST" name="testGetwithSuccessData" data-provider="dp_successdata" finished-at="2022-03-02T12:17:52 PST" duration-ms="997" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[137]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Budhil Menon]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetwithSuccessData -->
+        <test-method signature="testGetwithSuccessData(java.lang.String,java.lang.String)[pri:0, instance:com.apex.samples.UserAPITestNGGetXLS@3ba9ad43]" started-at="2022-03-02T12:17:52 PST" name="testGetwithSuccessData" data-provider="dp_successdata" finished-at="2022-03-02T12:17:53 PST" duration-ms="1004" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[140]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Shrishti Devar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetwithSuccessData -->
+        <test-method signature="testGetwithUpperCaseLetters()[pri:0, instance:com.apex.samples.UserAPITestNGGetXLS@3ba9ad43]" started-at="2022-03-02T12:17:53 PST" name="testGetwithUpperCaseLetters" finished-at="2022-03-02T12:17:54 PST" duration-ms="972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetwithUpperCaseLetters -->
+        <test-method signature="testGetwithWrongDataType()[pri:0, instance:com.apex.samples.UserAPITestNGGetXLS@3ba9ad43]" started-at="2022-03-02T12:17:54 PST" name="testGetwithWrongDataType" finished-at="2022-03-02T12:17:55 PST" duration-ms="982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetwithWrongDataType -->
+        <test-method signature="testGetwithZero()[pri:0, instance:com.apex.samples.UserAPITestNGGetXLS@3ba9ad43]" started-at="2022-03-02T12:17:55 PST" name="testGetwithZero" finished-at="2022-03-02T12:17:56 PST" duration-ms="993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetwithZero -->
+      </class> <!-- com.apex.samples.UserAPITestNGGetXLS -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

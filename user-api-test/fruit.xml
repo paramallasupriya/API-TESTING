@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fruit>
+    <id>1</id>
+    <name>Apple</name>
+    <price>19.99</price>
+</fruit>

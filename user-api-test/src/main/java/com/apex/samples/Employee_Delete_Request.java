@@ -1,0 +1,47 @@
+package com.apex.samples;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.HttpDelete;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.testng.annotations.Test; 
+
+/** 
+ * This class shows how to send a DELETE Request using 'HttpDelete' method of Apache HttpClient library. 
+ */
+
+public class Employee_Delete_Request {
+
+	@Test 
+	public void deleteEmployee() throws ClientProtocolException, IOException {
+
+		String deleteEndpoint = "http://dummy.restapiexample.com/api/v1/delete/8130";
+
+		CloseableHttpClient httpclient = HttpClients.createDefault();
+
+		HttpDelete httpDelete = new HttpDelete(deleteEndpoint);
+		System.out.println("Executing request " + httpDelete.getRequestLine());
+
+		HttpResponse response = httpclient.execute(httpDelete);
+
+		BufferedReader br = new BufferedReader(new InputStreamReader((response.getEntity().getContent()))); 
+
+		//Throw runtime exception if status code isn't 200 
+		if (response.getStatusLine().getStatusCode() != 200) { 
+			throw new RuntimeException("Failed : HTTP error code : " + response.getStatusLine().getStatusCode()); 
+		} 
+
+		//Create the StringBuffer object and store the response into it. 
+		StringBuffer result = new StringBuffer(); 
+		String line = ""; 
+		while ((line = br.readLine()) != null) { 
+			System.out.println("Response : \n"+result.append(line)); 
+		} 
+
+	} 
+
+}
